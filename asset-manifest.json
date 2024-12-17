@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-marosata%20/static/css/main.8df0adf4.css",
+    "main.js": "/portfolio-marosata%20/static/js/main.11ca3a71.js",
+    "static/js/453.f7ee0607.chunk.js": "/portfolio-marosata%20/static/js/453.f7ee0607.chunk.js",
+    "index.html": "/portfolio-marosata%20/index.html",
+    "main.8df0adf4.css.map": "/portfolio-marosata%20/static/css/main.8df0adf4.css.map",
+    "main.11ca3a71.js.map": "/portfolio-marosata%20/static/js/main.11ca3a71.js.map",
+    "453.f7ee0607.chunk.js.map": "/portfolio-marosata%20/static/js/453.f7ee0607.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8df0adf4.css",
+    "static/js/main.11ca3a71.js"
+  ]
+}
