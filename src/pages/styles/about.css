@@ -1,117 +1,213 @@
+.education-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.education-description {
+    font-size: 14px; /* Taille lisible du texte */
+    line-height: 1.5; /* Espacement entre les lignes */
+    white-space: normal; /* Permet le retour à la ligne */
+    word-wrap: break-word; /* Force le saut de ligne en cas de mot long */
+    overflow: hidden; /* Évite les débordements */
+    max-height: 80px; /* Limite la hauteur si nécessaire */
+}
+
+
+.education-card {
+    min-width: 250px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    white-space: normal; /* Permet d'afficher sur plusieurs lignes si nécessaire */
+    overflow: hidden; /* Cache les parties de texte trop longues */
+    text-overflow: ellipsis; /* Affiche des points de suspension à la fin */
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-card p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.education-degree {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.education-years,
+.education-field {
+    color: #555;
+}
+
+.education-description {
+    font-size: 14px; /* Augmente la taille du texte pour lisibilité */
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.about-educations h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 .about-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
+    display: flex;
+    justify-content: left;
+    padding-top: 25px;
 }
 
 .about-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+    display: flex;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    top: 4vh;
 }
 
 .about-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding-top: 120px;
 }
 
 .about-main {
-	display: flex;
+    display: flex;
 }
 
 .about-right-side {
-	flex-basis: 900px;
+    flex-basis: 900px;
 }
 
 .about-title {
-	width: 100% !important;
+    width: 100% !important;
 }
 
 .about-subtitle {
-	width: 80% !important;
+    width: 80% !important;
 }
 
 .about-left-side {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
 }
 
 .about-image-container {
-	width: 370px;
+    width: 370px;
 }
 
 .about-image-wrapper {
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	border-radius: 10%;
-	transform: rotate(3deg);
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10%;
+    transform: rotate(3deg);
 }
 
 .about-image-wrapper img {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .about-socials {
-	padding-top: 50px;
-	padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-socials-mobile {
-	display: none;
+    display: none;
 }
 
 @media (max-width: 1024px) {
-	.about-logo {
-		z-index: 100;
-	}
+    .about-logo {
+        z-index: 100;
+    }
 
-	.about-main {
-		flex-direction: column;
-	}
+    .about-main {
+        flex-direction: column;
+    }
 
-	.about-subtitle {
-		padding-top: 20px !important;
-	}
+    .about-subtitle {
+        padding-top: 20px !important;
+    }
 
-	.about-left-side {
-		flex-basis: 100%;
-		order: 1;
-	}
+    .about-left-side {
+        flex-basis: 100%;
+        order: 1;
+    }
 
-	.about-right-side {
-		flex-basis: 100%;
-		order: 2;
-	}
+    .about-right-side {
+        flex-basis: 100%;
+        order: 2;
+    }
 
-	.about-image-container {
-		padding-bottom: 40px;
-	}
+    .about-image-container {
+        padding-bottom: 40px;
+    }
 
-	.about-socials {
-		display: none;
-	}
+    .about-socials {
+        display: none;
+    }
 
-	.about-socials-mobile {
-		padding-top: 30px;
-		display: flex;
-	}
+    .about-socials-mobile {
+        padding-top: 30px;
+        display: flex;
+    }
+
+    .education-card p {
+        font-size: 14px;
+    }
+}
+.education-image {
+    width: 100%; /* Adapte l'image à la largeur de la carte */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 8px 8px 0 0; /* Arrondi les coins supérieurs */
+    margin-bottom: 15px; /* Espace entre l'image et le texte */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+    max-height: 150px; /* Hauteur maximale de l'image */
 }
 
 @media (max-width: 600px) {
-	.about-container {
-		padding-top: 60px;
-	}
+    .about-container {
+        padding-top: 60px;
+    }
 
-	.about-image-container {
-		width: 80%;
-	}
+    .about-image-container {
+        width: 80%;
+    }
+
+    .education-card p {
+        font-size: 12px; /* Réduit la taille du texte pour mieux s'adapter */
+    }
 }
+@media (max-width: 600px) {
+    .education-card {
+        padding: 10px;
+    }
+
+    .education-description {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+

@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
+import educations from "../data/educations.js"; // Importation des informations sur les éducations
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -12,11 +13,45 @@ import SEO from "../data/seo";
 import "./styles/about.css";
 
 const About = () => {
-	useEffect(() => {
+	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "about");
+
+	const splitDescription = (description) => {
+		const words = description.split(" ");
+		const chunkSize = 10; // Nombre de mots avant un saut de ligne
+		const chunks = [];
+
+		for (let i = 0; i < words.length; i += chunkSize) {
+			chunks.push(words.slice(i, i + chunkSize).join(" "));
+		}
+
+		return chunks.map((chunk, index) => (
+			<React.Fragment key={index}>
+				{chunk}
+				<br /> {/* Ajoute un saut de ligne */}
+			</React.Fragment>
+		));
+	};
+
+	const renderEducations = () => {
+		return educations.map((education, index) => (
+			<div key={index} className="education-card">
+				<img
+					src={education.image}
+					alt={education.degree}
+					className="education-image"
+				/>
+				<h3 className="education-degree">{education.degree}</h3>
+				<p className="education-years">{education.years} - {education.institution}</p>
+				<p className="education-field">{education.field}</p>
+				<p className="education-description">{splitDescription(education.description)}</p>
+			</div>
+		));
+	};
+
 
 	return (
 		<React.Fragment>
@@ -66,10 +101,15 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-						<div className="about-socials-mobile">
-							<Socials />
+
+						<div className="about-educations">
+							<h2>Parcours Académiques</h2>
+							<div className="education-carousel">
+								{renderEducations()}
+							</div>
 						</div>
 					</div>
+
 					<div className="page-footer">
 						<Footer />
 					</div>
