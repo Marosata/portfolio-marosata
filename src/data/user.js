@@ -59,10 +59,22 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Gestion des méthodes de travail à la Direction Générale des Douanes",
+			title: "Création de mon portfolio avec Reactjs ",
+			date: "Novembre 2024 - Décembre 2024",
+			description:
+				"Développement d'un site pour mon portfolio en local le moi de Novembre 2024, suite au déploiement de ce site avec vercel",
+			logos: [
+				"reactjs.png",
+				"vercel.webp",
+			],
+			linkText: "Voir le projet",
+			link: "https://github.com/Marosata/portfolio-marosata.git",
+		},
+		{
+			title: "Gestion et Modélisation d'un PTA (Plan de Travail Annuel) à la Direction Générale des Douanes",
 			date: "Décembre 2023 - Avril 2024",
 			description:
-				"Développement d'une application pour la modélisation et la gestion des méthodes de travail à la Direction Générale des Douanes. Ce projet a impliqué l'intégration de systèmes d'information pour un suivi précis des opérations et l'optimisation des flux de travail.",
+				"Développement d'une application pour la modélisation et la Gestion et Modélisation d'un PTA (Plan de Travail Annuel) à la Direction Générale des Douanes. Ce projet a impliqué l'intégration de systèmes d'information pour un suivi précis des opérations et l'optimisation des flux de travail.",
 			logos: [
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 				"/Oracle-Logo.png",
@@ -81,12 +93,12 @@ const INFO = {
 				"/Laravel.png",
 			],
 			linkText: "Voir le projet",
-			link: "https://gitlab.com/SEBXR/front-office-ventes-aux-encheres",
+			link: "",
 		},
 
 		{
 			title: "Application de gestion de stock avec Laravel et PostgreSQL",
-			date: "Novembre 2023",
+			date: "Octobre 2023",
 			description:
 				"Développement d'une application web de gestion de stock permettant d'automatiser les processus de suivi et de mise à jour des inventaires. Cette application a été conçue avec **Laravel** pour le backend et **PostgreSQL** comme base de données pour garantir la sécurité et la performance des transactions.",
 			logos: [
@@ -98,8 +110,21 @@ const INFO = {
 		},
 
 		{
+			title: "Site Web pour faire un blog sur les IA avec un backoffice et frontoffice",
+			date: "Mai 2023 - Juin 2023",
+			description:
+				"Ce projet a impliqué le développement et le déploiement d'un site web qui consistait à faire un site de blog qui parle de l'IA. Avec un référencement, une optimisation des contenus , authentification pour le backoffice.",
+			logos: [
+				"/Laravel.png",
+				"/Bootstrap.png",
+			],
+			linkText: "Voir le projet",
+			link: "https://github.com/Marosata/TP-S6-P14-WebDesign-Mai-2023.git",
+		},
+		
+		{
 			title: "Site web et application mobile pour des ventes aux enchères",
-			date: "Juin 2023 - Juillet 2023",
+			date: "Décembre 2023 - Janvier 2023",
 			description:
 				"Création d'un site de vente aux enchères en ligne, avec une interface utilisateur développée en **Ionic** et le backend en **Java Spring Boot**. Ce projet a permis de créer une plateforme efficace et intuitive pour les enchères en ligne.",
 			logos: [
@@ -109,22 +134,21 @@ const INFO = {
 			],
 			linkText: "Voir le projet",
 			link: [
-				"https://github.com/SoniaAndrianantenaina/Spring-Front-Office",
-				"https://gitlab.com/SEBXR/front-office-ventes-aux-encheres"
+				"https://github.com/SoniaAndrianantenaina/Spring-Front-Office"
 			],
 		},
 
 		{
-			title: "Système d'intelligence artificielle pour la prédiction de code",
-			date: "Janvier 2023",
+			title: "Application Web de Vente aux enchères pour le back-office",
+			date: "Décembre 2023 - Janvier 2023",
 			description:
-				"Ce projet a impliqué le développement d'une IA pour prédire si un texte est un code informatique ou non, utilisant **Python** et **Java**. En appliquant des modèles d'apprentissage automatique, ce système a permis de classifier efficacement les différents types de langage.",
+				"Création d'un site de vente aux enchères en ligne, avec une interface utilisateur développée en **Php** procédurale et le backend en **Java Spring Boot**. Ce projet a permis de créer une plateforme efficace et intuitive pour la mise en enchère des articles en ligne. Avec diverses options comme la mise minimale et une limte de temps.",
 			logos: [
-				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
+				"/Spring.svg",
 			],
 			linkText: "Voir le projet",
-			link: "",
+			link: "https://gitlab.com/SEBXR/front-office-ventes-aux-encheres",
 		},
 	],
 

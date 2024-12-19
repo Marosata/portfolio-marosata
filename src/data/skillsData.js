@@ -8,7 +8,7 @@ const skills = [
           advantage: "Polyvalent et portable.",
           disadvantage: "Syntaxe parfois verbeuse.",
           image: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
-          experience: 4 // Très bonne expérience
+          experience: 4
         },
         {
           name: "PHP",
@@ -16,7 +16,7 @@ const skills = [
           advantage: "Facile à apprendre et largement supporté.",
           disadvantage: "Peut être inefficace sans une bonne architecture.",
           image: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
-          experience: 5 // Très forte expertise
+          experience:4.5
         },
         {
           name: "C#",
@@ -24,7 +24,7 @@ const skills = [
           advantage: "Intégré à l'écosystème Microsoft.",
           disadvantage: "Dépend de la plateforme .NET.",
           image: "csharp-logo-265a149e.svg",
-          experience: 3 // Expérience intermédiaire
+          experience: 3.5
         },
         {
           name: "JavaScript",
@@ -32,7 +32,7 @@ const skills = [
           advantage: "Grande communauté et riche en bibliothèques.",
           disadvantage: "Parfois difficile à déboguer.",
           image: "Javascript.jpg",
-          experience: 4 // Bonne maîtrise
+          experience: 4
         },
         {
           name: "Python",
@@ -40,7 +40,7 @@ const skills = [
           advantage: "Syntaxe simple et lisible.",
           disadvantage: "Moins performant pour certaines tâches intensives.",
           image: "/python.png",
-          experience: 3 // Compétence modérée
+          experience: 3 
         },
       ],
     },
@@ -53,7 +53,7 @@ const skills = [
           advantage: "Facilité de gestion des composants.",
           disadvantage: "Évolution rapide nécessitant une mise à jour fréquente.",
           image: "/reactjs.png",
-          experience: 4 // Très bonne maîtrise
+          experience: 4
         },
         {
           name: "Spring Boot",
@@ -61,7 +61,7 @@ const skills = [
           advantage: "Configuration simplifiée pour les applications Java.",
           disadvantage: "Complexité croissante avec de grands projets.",
           image: "/Spring.svg",
-          experience: 3 // Compétence modérée
+          experience: 4
         },
         {
           name: "Laravel",
@@ -69,7 +69,7 @@ const skills = [
           advantage: "Supporte des fonctionnalités modernes.",
           disadvantage: "Peut être surdimensionné pour des petits projets.",
           image: "/Laravel.png",
-          experience: 5 // Expertise avancée
+          experience: 4
         },
         {
           name: "CodeIgniter",
@@ -77,7 +77,7 @@ const skills = [
           advantage: "Facile à configurer et rapide.",
           disadvantage: "Moins structuré que Laravel.",
           image: "/codeigniter-logo.png",
-          experience: 4 // Très bonne maîtrise
+          experience:3
         },
       ],
     },
@@ -90,7 +90,7 @@ const skills = [
           advantage: "Fiable et bien documentée.",
           disadvantage: "Moins performante avec des bases très volumineuses.",
           image: "/mysql.png",
-          experience: 5 // Expertise avancée
+          experience: 4
         },
         {
           name: "PostgreSQL",
@@ -98,7 +98,7 @@ const skills = [
           advantage: "Support des fonctionnalités complexes comme JSON.",
           disadvantage: "Courbe d'apprentissage plus élevée.",
           image: "/Postgres.png",
-          experience: 4 // Très bonne maîtrise
+          experience: 4
         },
         {
           name: "Oracle",
@@ -106,7 +106,7 @@ const skills = [
           advantage: "Sécurisée et performante.",
           disadvantage: "Licence coûteuse.",
           image: "/Oracle-Logo.png",
-          experience: 3 // Compétence modérée
+          experience: 4.5
         },
       ],
     },
