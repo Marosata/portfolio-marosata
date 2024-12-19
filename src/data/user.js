@@ -106,7 +106,7 @@ const INFO = {
 				"/Postgres.png",
 			],
 			linkText: "Voir le projet",
-			link: "https://github.com/votre-projet-stock",
+			link: "https://github.com/Marosata/Mikolo-stock.git",
 		},
 
 		{
