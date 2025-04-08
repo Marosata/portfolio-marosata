@@ -77,7 +77,7 @@ const skills = [
           advantage: "Facile à configurer et rapide.",
           disadvantage: "Moins structuré que Laravel.",
           image: "/codeigniter-logo.png",
-          experience:3
+          experience:4
         },
       ],
     },
@@ -106,7 +106,7 @@ const skills = [
           advantage: "Sécurisée et performante.",
           disadvantage: "Licence coûteuse.",
           image: "/Oracle-Logo.png",
-          experience: 4.5
+          experience: 3
         },
       ],
     },
