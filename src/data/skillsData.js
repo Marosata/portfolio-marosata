@@ -79,6 +79,14 @@ const skills = [
           image: "/codeigniter-logo.png",
           experience:4
         },
+        {
+          name: "ASP .NET Core",
+          description: "Framework pour le développement d'applications web , avec le langage C#.",
+          advantage: "Facile à apprendre et à utiliser.",
+          disadvantage: "Peut être difficile à configurer pour les débutants.",
+          image: "/ASPdotnet.png",
+          experience:4
+        },
       ],
     },
     {
