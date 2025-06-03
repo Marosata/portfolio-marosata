@@ -17,7 +17,7 @@ const INFO = {
 	homepage: {
 		title: "Développeur polyvalent en systèmes d'information, prêt à relever vos défis technologiques.",
 		description:
-			"Passionné par le développement web et mobile, je combine expertise technique et rigueur professionnelle pour concevoir des solutions innovantes. Avec une maîtrise avancée de technologies telles que PHP (Laravel, CodeIgniter), React.js, et une expérience en Java, C#, et Python, je suis capable de transformer des idées en applications performantes et fiables. Toujours à la recherche de nouveaux défis, je suis motivé par l'opportunité d'accompagner les entreprises dans leur transformation digitale.",
+			"Passionné par le développement web et mobile, je combine expertise technique et rigueur professionnelle pour concevoir des solutions innovantes. Avec une maîtrise avancée de technologies telles que PHP (Laravel, CodeIgniter), React.js, et une expérience en Java, C# (ASP.NET Core), et Python, je suis capable de transformer des idées en applications performantes et fiables. Toujours à la recherche de nouveaux défis, je suis motivé par l'opportunité d'accompagner les entreprises dans leur transformation digitale.",
 	},
 
 	about: {
@@ -59,6 +59,43 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Dév PHP/Flutter | Les piscines de Romain",
+			date: "Mars 2025 - Présent",
+			description:
+				"Développement et maintenance d’un site e-commerce et d’un réseau social personnel du client, avec une application mobile sous Flutter. Amélioration des plugins et de l’UI/UX pour une meilleure expérience utilisateur. Déploiement sur AWS. Tech stack : Laravel / MySQL / Flutter.",
+				logos: [
+					"/mysql.png",
+					"/flutter.png",
+					"/laravel.png",
+				],
+				linkText: "Voir le projet",
+				link: "https://drive.google.com/drive/folders/1ZBXVHY2ZMfX2RzHgtlFgBAz82uI9Kfr3?usp=sharing",
+		},
+		{
+			title: "Développeur API-IA | Freelance",
+			date: "Mars 2025",
+			description:
+				"Conception et développement d’applications d’API pour une automatisation IA Appel API De ChatGpt et Perplexity , pour faire des recherches sur le web (Web Scrapping). Et faire l'integration avec LinkedIn.",
+				logos: [
+					"/Javascript.jpg",
+				],
+				linkText: "Code source",
+				link: "https://github.com/Marosata/gemini-2.0-flash-API-project-.git",
+		},
+		{
+			title: "Développeur Full-Stack | SMMEC",
+			date: "Octobre 2024 - Février 2025",
+			description:
+				"Conception et développement d’applications web de bout en bout pour SMMEC, en collaboration avec l’équipe produit. Tech stack : Laravel, React.js, MySQL, et intégration de services externes.",
+				logos: [
+					"/reactjs.png",
+					"/mysql.png",
+					"/laravel.png",
+				],
+				linkText: "Voir le projet",
+				link: "https://drive.google.com/drive/folders/1UtB6kxNnmkqCmkS6kt7_s-9oqJatmiDf?usp=sharing",
+		},
+		{
 			title: "Création de mon portfolio avec Reactjs ",
 			date: "Novembre 2024 - Décembre 2024",
 			description:
@@ -79,8 +116,8 @@ const INFO = {
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 				"/Oracle-Logo.png",
 			],
-			linkText: "Le projet est classé confidentiel",
-			link: "",
+			linkText: "Voir le projet",
+			link: "https://drive.google.com/drive/folders/1PDit-M4C5mIVGBs9T7VMsAu2yOr5rwh7?usp=sharing",
 		},
 
 		{
