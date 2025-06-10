@@ -66,7 +66,7 @@ const INFO = {
 				logos: [
 					"/mysql.png",
 					"/flutter.png",
-					"/laravel.png",
+					"/Laravel.png",
 				],
 				linkText: "Voir le projet",
 				link: "https://drive.google.com/drive/folders/1ZBXVHY2ZMfX2RzHgtlFgBAz82uI9Kfr3?usp=sharing",
