@@ -45,7 +45,7 @@ const skills = [
       ],
     },
     {
-      category: "Frameworks",
+      category: "Frameworks & Librairies",
       items: [
         {
           name: "React.js",
