@@ -59,6 +59,18 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Projet Personnel: Application mobile pour une proposition de Recette Quotidienne | T-Ikaly",
+			date: "Juillet 2025 - Présent",
+			description:
+				"Solution avec une **Suggestion automatique** de plats quotidiens (petit-déj, déjeuner, dîner, goûter) avec une variété et un historique intelligent .**Proposition de recettes à partir des ingrédients disponibles**, entrés manuellement ou via liste de courses passée. Développer avec **C#** et **.NET MAUI** pour une application multiplateforme.",
+				logos: [
+					"/csharp-logo-265a149e.svg",
+					"/maui.jpeg",
+				],
+				linkText: "Voir le projet",
+				link: "https://github.com/Marosata/T-Ikaly.git",
+		},
+		{
 			title: "Dév PHP/Flutter | Les piscines de Romain",
 			date: "Mars 2025 - Présent",
 			description:
