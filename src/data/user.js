@@ -62,13 +62,24 @@ const INFO = {
 			title: "Projet Personnel: Application mobile pour une proposition de Recette Quotidienne | T-Ikaly",
 			date: "Juillet 2025 - Présent",
 			description:
-				"Solution avec une **Suggestion automatique** de plats quotidiens (petit-déj, déjeuner, dîner, goûter) avec une variété et un historique intelligent .**Proposition de recettes à partir des ingrédients disponibles**, entrés manuellement ou via liste de courses passée. Développer avec **C#** et **.NET MAUI** pour une application multiplateforme.",
+				"Solution avec une Suggestion automatique de plats quotidiens (petit-déj, déjeuner, dîner, goûter) avec une variété et un historique intelligent .Proposition de recettes à partir des ingrédients disponibles, entrés manuellement ou via liste de courses passée. Développer avec C# et .NET MAUI pour une application multiplateforme.",
 				logos: [
 					"/csharp-logo-265a149e.svg",
 					"/maui.jpeg",
 				],
 				linkText: "Voir le projet",
 				link: "https://github.com/Marosata/T-Ikaly.git",
+		},
+		{
+			title: "Projet de prévision de données pour un centre d'appels",
+			date: "Juillet 2025",
+			description: "Développement d'un script Python pour analyser les données historiques de vente et d'inventaire, et établir des prévisions pour le mois de juillet. Ce projet a permis de générer un livrable Excel complet incluant : Tableaux de bord et rapports sur l'évolution du chiffre d'affaires et du coût des ventes.Prévisions agrégées (scénarios réaliste, optimiste, pessimiste) pour le chiffre d'affaires et le coût des ventes.Identification des tendances et des anomalies de performance des produits.Analyse de la précision des prévisions (RMSE) pour identifier les produits les plus et les moins prévisibles.",
+			logos: [
+				"/python.png",
+				"/excel.jpeg"
+			],
+			linkText: "Voir le projet",
+			link: "https://drive.google.com/drive/folders/1QElljyap81EsQU_wVoUHpksmC1OKNSin?usp=sharing"
 		},
 		{
 			title: "Dév PHP/Flutter | Les piscines de Romain",
@@ -136,7 +147,7 @@ const INFO = {
 			title: "Application de gestion des activités d'entreprise événementielle",
 			date: "Octobre 2023 - Novembre 2023",
 			description:
-				"Ce projet consistait à développer une application de gestion pour des événements d'entreprise, utilisant **Laravel** pour le backend et une interface dynamique pour gérer les utilisateurs et les événements. Cette application a permis de simplifier le suivi des activités et de renforcer l'efficacité des processus événementiels.",
+				"Ce projet consistait à développer une application de gestion pour des événements d'entreprise, utilisant Laravel pour le backend et une interface dynamique pour gérer les utilisateurs et les événements. Cette application a permis de simplifier le suivi des activités et de renforcer l'efficacité des processus événementiels.",
 			logos: [
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
 				"/Laravel.png",
@@ -149,7 +160,7 @@ const INFO = {
 			title: "Application de gestion de stock avec Laravel et PostgreSQL",
 			date: "Octobre 2023",
 			description:
-				"Développement d'une application web de gestion de stock permettant d'automatiser les processus de suivi et de mise à jour des inventaires. Cette application a été conçue avec **Laravel** pour le backend et **PostgreSQL** comme base de données pour garantir la sécurité et la performance des transactions.",
+				"Développement d'une application web de gestion de stock permettant d'automatiser les processus de suivi et de mise à jour des inventaires. Cette application a été conçue avec Laravel pour le backend et PostgreSQL comme base de données pour garantir la sécurité et la performance des transactions.",
 			logos: [
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
 				"/Postgres.png",
@@ -175,7 +186,7 @@ const INFO = {
 			title: "Site web et application mobile pour des ventes aux enchères",
 			date: "Décembre 2023 - Janvier 2023",
 			description:
-				"Création d'un site de vente aux enchères en ligne, avec une interface utilisateur développée en **Ionic** et le backend en **Java Spring Boot**. Ce projet a permis de créer une plateforme efficace et intuitive pour les enchères en ligne.",
+				"Création d'un site de vente aux enchères en ligne, avec une interface utilisateur développée en Ionic et le backend en Java Spring Boot. Ce projet a permis de créer une plateforme efficace et intuitive pour les enchères en ligne.",
 			logos: [
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 				"/Ionic.png",
@@ -191,7 +202,7 @@ const INFO = {
 			title: "Application Web de Vente aux enchères pour le back-office",
 			date: "Décembre 2023 - Janvier 2023",
 			description:
-				"Création d'un site de vente aux enchères en ligne, avec une interface utilisateur développée en **Php** procédurale et le backend en **Java Spring Boot**. Ce projet a permis de créer une plateforme efficace et intuitive pour la mise en enchère des articles en ligne. Avec diverses options comme la mise minimale et une limte de temps.",
+				"Création d'un site de vente aux enchères en ligne, avec une interface utilisateur développée en Php procédurale et le backend en Java Spring Boot. Ce projet a permis de créer une plateforme efficace et intuitive pour la mise en enchère des articles en ligne. Avec diverses options comme la mise minimale et une limte de temps.",
 			logos: [
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
 				"/Spring.svg",
