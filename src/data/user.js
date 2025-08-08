@@ -113,7 +113,7 @@ const INFO = {
 				logos: [
 					"/reactjs.png",
 					"/mysql.png",
-					"/laravel.png",
+					"/Laravel.png",
 				],
 				linkText: "Voir le projet",
 				link: "https://drive.google.com/drive/folders/1UtB6kxNnmkqCmkS6kt7_s-9oqJatmiDf?usp=sharing",
