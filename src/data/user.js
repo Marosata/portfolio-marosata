@@ -82,7 +82,7 @@ const INFO = {
 			link: "https://drive.google.com/drive/folders/1QElljyap81EsQU_wVoUHpksmC1OKNSin?usp=sharing"
 		},
 		{
-			title: "Dév PHP/Flutter | Les piscines de Romain",
+			title: "Dév Java/PHP/Flutter | Les piscines de Romain",
 			date: "Mars 2025 - Présent",
 			description:
 				"Développement et maintenance d’un site e-commerce et d’un réseau social personnel du client, avec une application mobile sous Flutter. Amélioration des plugins et de l’UI/UX pour une meilleure expérience utilisateur. Déploiement sur AWS. Tech stack : Laravel / MySQL / Flutter.",
@@ -90,6 +90,7 @@ const INFO = {
 					"/mysql.png",
 					"/flutter.png",
 					"/Laravel.png",
+					"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 				],
 				linkText: "Voir le projet",
 				link: "https://drive.google.com/drive/folders/1ZBXVHY2ZMfX2RzHgtlFgBAz82uI9Kfr3?usp=sharing",
