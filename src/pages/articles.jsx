@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import skills from "../data/skillsData";
+import { useTranslatedData } from "../hooks/useTranslatedData";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -12,6 +12,8 @@ import SEO from "../data/seo";
 import "./styles/articles.css";
 
 const Articles = () => {
+	const { t, skills, language } = useTranslatedData();
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -30,7 +32,7 @@ const Articles = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Articles | ${INFO.main.title}`}</title>
+				<title>{`${t.nav.skills} | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta name="keywords" content={currentSEO.keywords.join(", ")} />
 			</Helmet>
@@ -45,10 +47,10 @@ const Articles = () => {
 					</div>
 
 					<div className="articles-main-container">
-						<div className="title articles-title">{INFO.articles.title}</div>
+						<div className="title articles-title">{t.skills.title}</div>
 
 						<div className="subtitle articles-subtitle">
-							{INFO.articles.description}
+							{t.skills.description}
 						</div>
 
 						<div className="skills-section">
@@ -65,9 +67,9 @@ const Articles = () => {
 												/>
 												<h3>{skill.name}</h3>
 												<p>{skill.description}</p>
-												<strong>Avantage :</strong> {skill.advantage}
+												<strong>{language === 'fr' ? 'Avantage' : 'Advantage'} :</strong> {skill.advantage}
 												<br />
-												<strong>Inconvénient :</strong> {skill.disadvantage}
+												<strong>{language === 'fr' ? 'Inconvénient' : 'Disadvantage'} :</strong> {skill.disadvantage}
 												<br />
 												<div className="skill-stars">{renderStars(skill.experience)}</div>
 											</div>

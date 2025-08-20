@@ -5,13 +5,19 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
+import ContactForm from "../components/contact/ContactForm";
 
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../data/i18n";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
 
 const Contact = () => {
+	const { language } = useLanguage();
+	const t = translations[language];
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -21,7 +27,7 @@ const Contact = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Contact | ${INFO.main.title}`}</title>
+				<title>{`${t.nav.contact} | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -40,31 +46,25 @@ const Contact = () => {
 
 					<div className="contact-container">
 						<div className="title contact-title">
-						Entrons en contact : Comment me joindre
+							{t.contact.title}
 						</div>
 
 						<div className="subtitle contact-subtitle">
-							Merci pour votre intérêt à prendre contact avec moi. 
-							Que vous soyez recruteur ou entreprise à la recherche de solutions innovantes, 
-							je serai ravi d'échanger avec vous ! 
-							Vous pouvez me contacter directement par email à{" "}
+							{t.contact.subtitle}{" "}
 							<a href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
 							</a>
-							, et je m'engage à répondre sous 24 heures. 
-							Vous pouvez également utiliser le formulaire de contact sur mon site pour entrer en contact, 
-							et je vous répondrai dès que possible. 
-							Si vous préférez me contacter via les réseaux sociaux, vous pouvez me trouver sur{" "}
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{INFO.socials.instagram}
-							</a>
-							. Je publie régulièrement des mises à jour et j'échange avec mes abonnés. N'hésitez pas à me contacter, je serai ravi de collaborer avec vous et de donner vie à vos idées.
+							{" "}{t.contact.responseTime}
 						</div>
+					</div>
 
+					{/* Nouveau formulaire de contact */}
+					<ContactForm />
+
+					<div className="contact-additional-info">
+						<p className="social-contact-text">
+							{t.contact.socialText}
+						</p>
 					</div>
 
 					<div className="socials-container">

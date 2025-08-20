@@ -6,12 +6,17 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../data/i18n";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
 
 const Projects = () => {
+	const { language } = useLanguage();
+	const t = translations[language];
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -21,7 +26,7 @@ const Projects = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Projects | ${INFO.main.title}`}</title>
+				<title>{`${t.nav.projects} | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -39,15 +44,11 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Les projets que j'ai réalisés pour contribuer à l'innovation.
+							{t.projects.title}
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							Au cours de ma carrière, j'ai eu la chance de travailler sur une variété de projets passionnants, 
-							chacun me permettant d'explorer de nouvelles technologies et d'affiner mes compétences. 
-							Chaque projet a été une occasion d'apprendre, de collaborer et de repousser les limites de ce qui est possible. 
-							Je suis fier des progrès accomplis et des solutions que j'ai pu apporter. 
-							Vous trouverez ci-dessous certains des projets sur lesquels j'ai travaillé, et je suis toujours ouvert aux suggestions et aux collaborations pour aller encore plus loin.
+							{t.projects.subtitle}
 						</div>
 
 

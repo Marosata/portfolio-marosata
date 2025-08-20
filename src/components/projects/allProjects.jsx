@@ -1,14 +1,16 @@
 import React from "react";
 
 import Project from "./project";
-import INFO from "../../data/user";
+import { useTranslatedData } from "../../hooks/useTranslatedData";
 
 import "./styles/allProjects.css";
 
 const AllProjects = () => {
+	const { projects } = useTranslatedData();
+	
 	return (
 		<div className="all-projects-container">
-			{INFO.projects.map((project, index) => (
+			{projects.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
 						logos={project.logos}   

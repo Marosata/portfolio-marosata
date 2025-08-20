@@ -5,7 +5,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
-import educations from "../data/educations.js"; // Importation des informations sur les éducations
+import { useTranslatedData } from "../hooks/useTranslatedData";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -13,6 +13,8 @@ import SEO from "../data/seo";
 import "./styles/about.css";
 
 const About = () => {
+	const { t, educations } = useTranslatedData	();
+	
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -56,7 +58,7 @@ const About = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
+				<title>{`${t.nav.about} | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -77,11 +79,11 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									{INFO.about.title}
+									{t.about.title}
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+									{t.about.description}
 								</div>
 							</div>
 
@@ -103,7 +105,7 @@ const About = () => {
 						</div>
 
 						<div className="about-educations">
-							<h2>Parcours Académiques</h2>
+							<h2>{t.about.academicPath}</h2>
 							<div className="education-carousel">
 								{renderEducations()}
 							</div>

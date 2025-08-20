@@ -25,14 +25,25 @@
 }
 
 
+.contact-additional-info {
+	text-align: center;
+	margin: 40px 0 20px 0;
+}
+
+.social-contact-text {
+	font-size: 16px;
+	color: var(--primary-color, #333);
+	margin: 0;
+}
+
 .socials-container {
 	display: flex;
 	flex-direction: column;
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
 .contact-socials {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 }

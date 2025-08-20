@@ -13,12 +13,17 @@ import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import AllProjects from "../components/projects/allProjects";
 
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../data/i18n";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/homepage.css";
 
 const Homepage = () => {
+	const { language } = useLanguage();
+	const t = translations[language];
+	
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -87,11 +92,11 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									{t.homepage.title}
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									{t.homepage.description}
 								</div>
 							</div>
 

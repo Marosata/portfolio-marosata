@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../data/i18n";
+import LanguageToggle from "./LanguageToggle";
 
 import "./styles/navBar.css";
 
 const NavBar = (props) => {
 	const { active } = props;
+	const { language } = useLanguage();
+	const t = translations[language];
 
 	return (
 		<React.Fragment>
@@ -19,7 +24,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/">Home</Link>
+								<Link to="/">{t.nav.home}</Link>
 							</li>
 							<li
 								className={
@@ -28,7 +33,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/about">About</Link>
+								<Link to="/about">{t.nav.about}</Link>
 							</li>
 							<li
 								className={
@@ -37,7 +42,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/projects">Projects</Link>
+								<Link to="/projects">{t.nav.projects}</Link>
 							</li>
 							<li
 								className={
@@ -46,7 +51,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/articles">Skills</Link>
+								<Link to="/articles">{t.nav.skills}</Link>
 							</li>
 							<li
 								className={
@@ -55,9 +60,12 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/contact">Contact</Link>
+								<Link to="/contact">{t.nav.contact}</Link>
 							</li>
 						</ul>
+						<div className="nav-language">
+							<LanguageToggle />
+						</div>
 					</div>
 				</nav>
 			</div>
